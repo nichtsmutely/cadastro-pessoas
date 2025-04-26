@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <h2>Edição de Pessoa</h2>
+
+  <form [formGroup]="form" (ngSubmit)="salvar()">
+    <div class="mb-3">
+      <label class="form-label">Nome</label>
+      <input formControlName="nome" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">E-mail</label>
+      <input formControlName="email" class="form-control" required type="email">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Telefone</label>
+      <input formControlName="telefone" class="form-control">
+    </div>
+
+    <button class="btn btn-primary" type="submit">Salvar</button>
+    <a routerLink="/listagem" class="btn btn-secondary ms-2">Cancelar</a>
+  </form>
+</div>

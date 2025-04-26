@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <h2>Lista de Pessoas</h2>
+  <a routerLink="/cadastro" class="btn btn-primary mb-3">Nova Pessoa</a>
+
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th style="width: 200px;">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pessoa of pessoas">
+        <td>{{ pessoa.nome }}</td>
+        <td>{{ pessoa.email }}</td>
+        <td>
+          <button class="btn btn-sm btn-info me-1" (click)="visualizar(pessoa.id!)">Ver</button>
+          <button class="btn btn-sm btn-warning me-1" (click)="editar(pessoa.id!)">Editar</button>
+          <button class="btn btn-sm btn-danger" (click)="excluir(pessoa.id!)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

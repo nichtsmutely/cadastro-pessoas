@@ -1,0 +1,11 @@
+<div class="container mt-4">
+  <h2>Detalhes da Pessoa</h2>
+
+  <div *ngIf="pessoa">
+    <p><strong>Nome:</strong> {{ pessoa.nome }}</p>
+    <p><strong>E-mail:</strong> {{ pessoa.email }}</p>
+    <p><strong>Telefone:</strong> {{ pessoa.telefone || 'Não informado' }}</p>
+
+    <a routerLink="/listagem" class="btn btn-secondary">Voltar</a>
+  </div>
+</div>
