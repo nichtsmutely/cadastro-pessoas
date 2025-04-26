@@ -43,22 +43,3 @@ O formulário de cadastro possui validação para:
 Nome (campo obrigatório)
 E-mail (campo obrigatório e deve ser um e-mail válido)
 Telefone (campo opcional)
-
-Estrutura do Projeto
-A estrutura do projeto é organizada da seguinte forma:
-
-cadastro-pessoas/
-├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   │   ├── cadastro/
-│   │   │   │   ├── cadastro.component.ts
-│   │   │   │   ├── cadastro.component.html
-│   │   │   │   └── cadastro.component.css
-│   │   ├── models/
-│   │   │   ├── pessoa.model.ts
-│   │   └── services/
-│   │       ├── pessoa.service.ts
-├── angular.json
-├── package.json
-└── README.md
